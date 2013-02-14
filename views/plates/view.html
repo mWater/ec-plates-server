@@ -1,0 +1,39 @@
+{{extend 'layout.html'}}
+
+<h2>Plate {{=plate.name}}</h2>
+
+<div class="row">
+<table class="table span6">
+  <thead>
+  <tr><th>Type</th><th>Count</th></tr>
+  </thead>
+  <tbody>
+  <tr><td><i>E.Coli</i></td><td><b>{{=plate.blue_count}}</b></td></tr>
+  <tr><td>Total Coliform</td><td>{{=plate.red_count}}</td></tr>
+  </tbody>
+</table>
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#orig" data-toggle="tab">Original Image</a></li>
+  <li><a href="#colonies" data-toggle="tab">Colonies Image</a></li>
+  <li><a href="#petri" data-toggle="tab">Petri Image</a></li>
+  <li><a href="#problem" data-toggle="tab">Report Problem</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="orig">
+    <img src="{{=URL('download', args=plate.original)}}" width="80%"/>
+  </div>
+  <div class="tab-pane" id="colonies">
+    <img src="{{=URL('download', args=plate.colonies)}}" width="80%"/>
+  </div>
+  <div class="tab-pane" id="petri">
+    <img src="{{=URL('download', args=plate.petri)}}" width="80%"/>
+  </div>
+  <div class="tab-pane" id="problem">
+    {{=form}}
+  </div>
+</div>
+    
+
