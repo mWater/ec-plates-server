@@ -1,1 +1,18 @@
 [2013-02-14 14:42:17] START
+[2013-02-15 02:22:27] EDIT ecplates/controllers/default.py: 1
+[2013-02-15 02:22:38] EDIT ecplates/controllers/plates.py: 0
+[2013-02-15 02:45:12] EDIT ecplates/models/process_plates.py: 0
+[2013-02-15 02:45:24] EDIT ecplates/models/process_plates.py: 1
+[2013-02-15 02:46:27] EDIT ecplates/models/process_plates.py: 0
+[2013-02-15 02:46:39] EDIT ecplates/models/process_plates.py: 0
+[2013-02-15 02:46:43] EDIT ecplates/models/process_plates.py: -1
+[2013-02-15 02:47:52] EDIT ecplates/controllers/plates.py: -2
+[2013-02-15 12:24:07] EDIT ecplates/views/plates/view.html: 0
+[2013-02-15 13:45:50] EDIT ecplates/views/plates/view.html: -1
+[2013-02-15 13:47:09] EDIT ecplates/views/plates/view.html: 0
+[2013-02-15 13:49:18] EDIT ecplates/models/process_plates.py: 0
+[2013-02-15 13:50:37] EDIT ecplates/controllers/plates.py: 2
+[2013-02-15 13:50:43] EDIT ecplates/controllers/plates.py: 0
+[2013-02-15 13:51:04] EDIT ecplates/controllers/plates.py: 0
+[2013-02-15 13:56:39] EDIT ecplates/models/menu.py: 0
+[2013-02-15 13:56:46] EDIT ecplates/models/menu.py: 0

@@ -2,8 +2,8 @@ import os, subprocess, tempfile
 import json
 
 def process_plate(plate):
-    apppath = 'C:/Users/Clayton/Documents/Projects/EC Plates/Debug'
-    appname = 'ECPlates.exe'
+    apppath = '/home/www-data/ec-plates'
+    appname = 'ec-plates'
     imagepath = os.path.join(db.plates.original.uploadfolder, plate.original)
     
     coloniespath = tempfile.NamedTemporaryFile(suffix='.jpg');
@@ -28,6 +28,3 @@ def process_plate(plate):
     finally:
         os.unlink(coloniespath.name)
         os.unlink(petripath.name)
-    
-
-    

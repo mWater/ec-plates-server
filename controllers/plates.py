@@ -1,5 +1,3 @@
-
-
 def upload():
     form = SQLFORM(db.plates, fields=['name', 'original'])
     if form.process().accepted:
@@ -10,18 +8,18 @@ def upload():
         redirect(URL(f='view', args=[form.vars.id]))
     elif form.errors:
         response.flash = 'form has errors'
-    else:
-        response.flash = 'please fill out the form'
     return dict(form=form)    
 
-def list():
+def index():
     plates = db(db.plates.id>0).select()
     return dict(plates=plates)
 
 def view():
     plate = db.plates(request.args[0])
     
-    form = SQLFORM(db.plates, plate, fields=['problem', 'actual_red_count', 'actual_blue_count', 'comments'])
+    form = SQLFORM(db.plates, plate, 
+        fields=['problem', 'actual_red_count', 'actual_blue_count', 'comments'],
+        labels={'actual_blue_count' : 'Actual E.Coli (TNTC=9999)', 'actual_red_count' : 'Actual TC (TNTC=9999)'})
     if form.process().accepted:
         response.flash = 'Recorded'
     elif form.errors:

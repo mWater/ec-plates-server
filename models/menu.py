@@ -22,6 +22,7 @@ response.google_analytics_id = None
 #########################################################################
 
 response.menu = [
+    (T('View List'), False, URL('plates','index'), []),
     (T('Upload'), False, URL('plates','upload'), [])
     ]
 
@@ -97,5 +98,4 @@ def _():
                         ])
                 ]
          )]
-_()
-
+#_()
