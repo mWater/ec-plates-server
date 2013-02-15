@@ -16,8 +16,8 @@
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#orig" data-toggle="tab">Original Image</a></li>
-  <li><a href="#colonies" data-toggle="tab">Colonies Image</a></li>
   <li><a href="#petri" data-toggle="tab">Petri Image</a></li>
+  <li><a href="#colonies" data-toggle="tab">Colonies Image</a></li>
   <li><a href="#problem" data-toggle="tab">Report Problem</a></li>
 </ul>
 
@@ -25,11 +25,11 @@
   <div class="tab-pane active" id="orig">
     <img src="{{=URL('download', args=plate.original)}}" width="80%"/>
   </div>
-  <div class="tab-pane" id="colonies">
-    <img src="{{=URL('download', args=plate.colonies)}}" width="80%"/>
-  </div>
   <div class="tab-pane" id="petri">
     <img src="{{=URL('download', args=plate.petri)}}" width="80%"/>
+  </div>
+  <div class="tab-pane" id="colonies">
+    <img src="{{=URL('download', args=plate.colonies)}}" width="80%"/>
   </div>
   <div class="tab-pane" id="problem">
     {{=form}}

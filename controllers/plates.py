@@ -14,6 +14,10 @@ def upload():
         response.flash = 'please fill out the form'
     return dict(form=form)    
 
+def list():
+    plates = db(db.plates.id>0).select()
+    return dict(plates=plates)
+
 def view():
     plate = db.plates(request.args[0])
     

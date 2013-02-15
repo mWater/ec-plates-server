@@ -81,9 +81,9 @@ use_janrain(auth,filename='private/janrain.key')
 
 db.define_table('plates', 
                 Field('name'),
-                Field('original', 'upload', autodelete=True),
-                Field('petri', 'upload', autodelete=True, uploadfolder=os.path.join(request.folder,'data/images')),
-                Field('colonies', 'upload', autodelete=True, uploadfolder=os.path.join(request.folder,'data/images')),
+                Field('original', 'upload', autodelete=True, uploadfolder=os.path.join(request.folder,'data/images/original')),
+                Field('petri', 'upload', autodelete=True, uploadfolder=os.path.join(request.folder,'data/images/petri')),
+                Field('colonies', 'upload', autodelete=True, uploadfolder=os.path.join(request.folder,'data/images/colonies')),
                 Field('red_count', 'integer'),
                 Field('blue_count', 'integer'), 
                 Field('algorithm'),
